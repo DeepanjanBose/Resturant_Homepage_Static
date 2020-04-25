@@ -1,0 +1,314 @@
+/****************************defaults**********************/
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color:#000;
+	font-family: 'Slabo 27px', serif;
+}
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url('../images/dosa.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container{
+    width:100%;
+    margin:auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-image: linear-gradient(to right,#290a0a,#3e0f0f, #521414, #671919);
+}
+label{
+font-size: 35px;
+font-weight: 600px;
+}
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+.row1{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/**************************logo******************************/
+.logo{
+	height:120px;
+	width: auto;
+	float: left;
+	margin top:20px;
+}
+/*************************navbar****************************/
+.main-nav{
+	float: right;
+	margin-top: 50px;
+}
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 20px;
+}
+.main-nav li a{
+	padding: 5px 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100px;
+}
+
+.main-nav li a:hover{
+	border-bottom: 2px solid #bf55ec;
+}
+ul.main-nav li.dropdownIcon {
+   display: none;
+}
+/******************main-content-header*************************/
+.main-content-header{
+	width: 1180px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+}
+
+
+
+h1{
+	color: #fff;
+	font-size: 240%;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-weight: lighter;
+}
+.colorchange{
+	animation: colrchng 1s infinite;
+}
+@keyframes colrchng{
+			0%{color: red;}
+		25%{color: #bf55ec;}
+		50%{color:white;}
+		100%{color: #bf55ec;}
+}
+
+/***********************button********************************/
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s,border 0.2s, color 0.2s;
+}
+
+.btn-full{
+	background-color: transparent;
+	color: #bf55ec;
+	margin-right: 15px;
+	border:1px solid #bf55ec;
+}
+
+.btn-full:hover{
+	background-color: #fff;
+}
+.btn-more{
+	background-color: transparent;
+	color: #fff;
+	margin-right: 15px;
+	border:1px solid #fff;	
+}
+.btn-more:hover{
+	background-color: #bf55ec;
+}
+/***********************middle******************************/
+
+div.icon img{
+width:100%;
+}
+div.box{
+    text-align: center;
+    margin: 15px 24px;
+    padding: 10px 24px 10px 24px;
+    border-radius: 7px;
+    background-color:#fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+        0 2px 3px 0 rgba(0,0,0,1);
+}
+div.icon img.no-res{
+width:79%;
+}
+div.icon img.sup-fa{
+width:84%;
+}
+/************************footer**************************/
+footer.footsy{
+background-color: black;
+padding-left: 10%; 
+text-transform: uppercase;
+position: relative;
+margin: 0 auto;
+padding-top: 50px;
+display: flex;
+}
+footer.footsy h2{
+    color: #fff;
+	font-size: 28px;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-weight: lighter;
+}
+footer.footsy ul{
+list-style: none;
+text-align:left;
+padding-left: 0;
+}
+footer.footsy ul li{
+    color: #fff;
+    font-size: 15px;
+    line-height: 2;
+}
+
+/*******************************mobile***************************/
+@media screen and (max-width:680px){
+    ul.main-nav li:not(:nth-child(0)){
+        display: none;
+    }
+    ul.main-nav{
+   	margin-top: 30px;
+    margin-right:20px; 
+    }
+    ul.main-nav li.dropdownIcon{
+    display: block;
+    float: right;
+
+    }
+    ul.main-nav.responsive li.dropdownIcon{
+    position:absolute;
+    top:0;
+    right:0;    
+    }
+     ul.main-nav.responsive{
+    position: relative;
+    }
+    ul.main-nav.responsive li{
+        display: inline;
+        float: none;
+    }
+    ul.main-nav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    div.mobileStack{
+    width: 100%;
+    margin: 0;
+    display: block;
+    padding-left:8%;
+    padding-bottom: 50px;
+    }
+    div.mobileStack h2{
+        margin-bottom: 7px;
+    }
+    .col-4{
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    div.icon{
+        width: 50%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 1180px){
+	.main-content-header{
+		width: 100%;
+		height:0.2%;
+	}
+}
+@media screen and (max-width: 998px){
+	h1{font-size: 200%;}
+    label{
+        font-size:32px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 848px){
+    div.box1{
+        padding: 12px;
+    }
+    div.icon1{
+        height: 90%;
+    }
+}
+@media screen and (max-width: 768px){
+	h1{
+		font-size: 175%;
+	}
+        label{
+        font-size:28px;
+        font-weight: 600;
+    }
+    div.box {
+    padding: 0px;
+    }
+    div.box1{
+        padding: 11px;
+    }
+}
+@media screen and (max-width: 758px){
+    div.box1{
+        padding: 7px;
+    }
+    div.box1 div.label{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 480px){
+	h1{font-size: 150%;}
+	.btn-full{
+		margin-bottom: 20px;
+}
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Foodcubo</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+	<nav>
+		<div class="row1 clearfix">
+			<img src="images/logo.png" class="logo">
+
+			<ul class="main-nav" id=dropdownClick>
+				<li><a href="#">FOOD DELIVERY</a></li>
+				<li><a href="#">HOW TO ORDER</a></li>
+				<li><a href="#">CHECK MORE</a></li>
+				<li><a href="#">SIGN UP</a></li>
+				<li class="dropdownIcon"><a href="javascript:void(0);"onClick="dropdownMenu()">&#9776;</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="main-content-header">
+		<h1>WELCOME TO <span class="colorchange">FOODCUBO</span>.<br>
+		HOUSE OF SUPER HEALTHY MEALS.</h1>
+		<a href="#" class="btn btn-full">I AM HUNGRY</a>
+		<a href="#" class="btn btn-more">Show me more</a>
+	</div>
+</header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box box1">
+                <div class="icon icon1">
+                    <img src="images/online-food-ordering-concept_2003954.jpg" class="no-res">
+                </div>
+                    <label>Place Unlimited Order</label>
+                    <p>Order in for yourself or for your group, with no restrictions on order   </p>
+                </div>
+            </div>
+             <div class="col-4">
+                <div class="box box2">
+                <div class="icon icon2">
+                    <img src="images/superfast%20delivery.jpg" class="sup-fa">
+                </div>
+                     <label>Super-Fast Delivery</label>
+                    <p>Experience Foodcudo's superfast delivery for food delivered fresh & on time</p> 
+                </div>
+            </div>
+             <div class="col-4">
+                <div class="box box3">
+                <div class="icon icon3">
+                    <img class="live-track" src="images/track.jpg">
+                </div>
+                   <label>Live Order Tracking</label>
+                    <p> Know where your order is at all times, from the restaurant to your doorstep</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <footer class="footsy">
+        <div class="row">
+            <div class="col-4 mobileStack">
+                <h2>COMPANY</h2>
+                <ul>
+                    <li>ABOUT</li>
+                    <li>TEAM</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-4 mobileStack">
+                <h2>CONTACT</h2>
+                <ul>
+                    <li>HELP & SUPPORT</li>
+                    <li>OUR PARTNERS</li>
+                  
+                </ul>
+            </div>
+            <div class="col-4 mobileStack">
+                <h2>LEGAL</h2>               
+                <ul>
+                    <li>TERMS & CONDITIONS</li>
+                    <li>COOKIE POLICY</li>
+                    <li>PRIVACY POLICY</li>
+                    <li>REFUND & CANCELLATION</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+    <script>
+        function dropdownMenu(){
+            var x=document.getElementById("dropdownClick");
+            if(x.className ==="main-nav"){
+                x.className +=" responsive";
+            }else{
+                x.className="main-nav";
+            }
+        }
+    </script>
+</html>
